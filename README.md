@@ -2,10 +2,10 @@
 
 
 ## Instructions To Run Locally (for macbook):
-**Step 1
+**Step 1**
 Create or Ask Mike for .env file
 
-**Step 2
+**Step 2**
 ```bash
 python3 -m venv flaskenv
 source flaskenv/bin/activate
