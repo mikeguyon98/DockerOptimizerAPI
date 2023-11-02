@@ -2,9 +2,6 @@ import subprocess
 import json
 import re
 
-
-
-
 #find alternative to stderr for docker functions
 
 def delete_docker_image(image_name):
