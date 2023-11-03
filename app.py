@@ -3,11 +3,13 @@ import os
 
 import openai
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 from services.optimizer_service import analyze_docker_image
 from services.llm_service import generate_response
 
 app = Flask(__name__)
+CORS(app)
 
 load_dotenv()
 
