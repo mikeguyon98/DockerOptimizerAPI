@@ -24,11 +24,11 @@ COPY . /app
 WORKDIR /app
 
 # Copy the start script
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY productionstart.sh /productionstart.sh
+RUN chmod +x /productionstart.sh
 
 # Expose the port your application runs on
 EXPOSE 5000
 
 # Start the Docker daemon and then run the application
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/productionstart.sh"]
