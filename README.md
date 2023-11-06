@@ -70,6 +70,17 @@ To run the container run the following command:
 docker run -d --privileged --name my-docker-optimizer-prod -p 5000:5000 --env-file .flaskenv mikeguyon98/my-docker-optimizer-prod
 ```
 
+**Other Developer Info**
+
+Docker Build Command for Dev:
+```bash
+docker build -t mikeguyon98/my-docker-optimizer-<EnterDevName> .
+```
+Docker Build Command for Prod:
+```
+docker build -t mikeguyon98/my-docker-optimizer-prod:<Version Number> .
+```
+
 ## API Inputs
 - docker image name
 - Dockerfile text
