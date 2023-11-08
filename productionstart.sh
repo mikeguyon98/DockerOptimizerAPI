@@ -10,4 +10,4 @@ until docker info; do
 done
 
 # Now run the main application
-exec gunicorn -w 2 -b 0.0.0.0:5000 --timeout 1000 "app:app"
+exec gunicorn -w 2 -b 0.0.0.0:5000 --timeout 350 "app:app"
