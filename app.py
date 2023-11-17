@@ -35,6 +35,10 @@ def analyze_image():
     # return the response from GPT-3
     if analysis_results:
         string_results = str(analysis_results)
+        if len(string_results) > 5000:
+            # Assuming that a token is roughly equivalent to a character.
+            # This might need adjustment depending on how you define a token.
+            string_results = string_results[-5000:]
         print(string_results)
         response = generate_response(string_results, prompt, dockerfile)
         if response:
